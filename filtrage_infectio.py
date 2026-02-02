@@ -4,9 +4,18 @@ import os
 source_dir = "AllBiomodels.xml"
 output_file = "liste_modeles_infectieux.txt"
 
-# Mots-clés basés sur votre document (Hôte-pathogène, immunité, etc.)
-keywords = ["virus", "bacteria", "infection",]
-
+# Keywords
+keywords = [
+    # Pathogenic agents
+    "virus", "bacteria", "pathogen", "fungi", "parasite", "prion",
+    # Processus d'infection
+    "infection", "immune response", "host-pathogen", "viral load", 
+    "epidemic", "transmission", "vaccination", "antibiotic", "antiviral",
+    # Major specific diseases
+    "sars-cov-2", "covid-19", "hiv", "aids", "malaria", "tuberculosis", 
+    "influenza", "flu", "ebola", "cholera", "zika", "dengue", "hepatitis",
+    "pneumonia", "sepsis", "leishmaniasis", "trypanosoma"
+]
 print(f"Analyse des fichiers dans {source_dir}...")
 
 infectious_count = 0
@@ -25,5 +34,5 @@ with open(output_file, "w") as out:
             except:
                 continue
 
-print(f"Terminé ! {infectious_count} modèles infectieux détectés.")
-print(f"La liste a été sauvegardée dans : {output_file}")
+print(f"Done! {infectious_count} infectious models detected.")
+print(f"The list has been saved to: {output_file}")
