@@ -310,16 +310,16 @@ Python was selected as the core language due to the team’s advanced proficienc
 The repository is structured as follows :
 
 ``` /InfectioGIT
-   /disease_name/ (e.g., /dengue/): contains disease-specific data.
-       /models/
-	SBML files (mechanistic and mathematical descriptions)
-       /metadata/
-JSON files (indexing, searchability, and interoperability)
-   /ontologies/ for standardized disease mapping.
-       DOID.obo
-       MONDO.owl
-   /scripts/ Python automation tools for retrieval and enrichment.
-   /docs/ Technical documentation and user guides.
+      /disease_name/ (e.g., /dengue/): contains disease-specific data.
+        /models/
+	        SBML files (mechanistic and mathematical descriptions)
+        /metadata/
+          JSON files (indexing, searchability, and interoperability)
+        /ontologies/ for standardized disease mapping.
+          DOID.obo
+          MONDO.owl
+        /scripts/ Python automation tools for retrieval and enrichment.
+        /docs/ Technical documentation and user guides.
 ```
 Organizational structure of the InfectioGIT repository
 
